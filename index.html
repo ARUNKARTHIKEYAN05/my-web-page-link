@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARUNKARTHIKEYAN M | Creative Technologist &amp; Web Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of ARUNKARTHIKEYAN M – MCA student, web developer, programmer, creative technologist and filmmaker exploring technology, AI and digital creativity.">
+  <meta name="author" content="ARUNKARTHIKEYAN M">
+  <meta name="keywords" content="ARUNKARTHIKEYAN M, Creative Technologist, Web Developer, Programmer, Filmmaker, MCA, Portfolio, Smart India Hackathon, UI/UX, Python, JavaScript, Angular">
+  <meta name="theme-color" content="#07090e">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ARUNKARTHIKEYAN M | Creative Technologist &amp; Web Developer">
+  <meta property="og:description" content="Portfolio of ARUNKARTHIKEYAN M – MCA student, web developer, programmer, creative technologist and filmmaker exploring technology, AI and digital creativity.">
+  <meta property="og:url" content="https://arunkarthikeyan05.github.io/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ARUNKARTHIKEYAN M | Creative Technologist &amp; Web Developer">
+  <meta name="twitter:description" content="Portfolio of ARUNKARTHIKEYAN M – MCA student, web developer, programmer, creative technologist and filmmaker exploring technology, AI and digital creativity.">
+
+  <!-- Favicon placeholder (inline SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2307090e'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='%2338bdf8' font-size='48' font-family='sans-serif' font-weight='bold'>AK</text></svg>">
+
+  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-cyan" aria-hidden="true"></div>
+  <div class="ambient-glow glow-amber" aria-hidden="true"></div>
+  <div class="ambient-glow glow-purple" aria-hidden="true"></div>
+
+  <!-- Interactive Particles Canvas -->
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==========================================================================
+       STICKY NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="ARUNKARTHIKEYAN M Home">
+        <div class="logo-symbol">AK</div>
+        <div class="brand-text">
+          <span class="brand-name">ARUNKARTHIKEYAN M</span>
+          <span class="brand-title">Creative Technologist</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links-desktop">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#creative" class="nav-link nav-creative">Creative</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Backdrop -->
+  <div class="mobile-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile Navigation Menu">
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link">Home <span>→</span></a></li>
+      <li><a href="#about" class="mobile-nav-link">About <span>→</span></a></li>
+      <li><a href="#education" class="mobile-nav-link">Education <span>→</span></a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills <span>→</span></a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects <span>→</span></a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience <span>→</span></a></li>
+      <li><a href="#certifications" class="mobile-nav-link">Certifications <span>→</span></a></li>
+      <li><a href="#creative" class="mobile-nav-link nav-creative">Creative &amp; Cinema <span>→</span></a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact <span>→</span></a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn btn-primary" style="width: 100%;">Let's Connect</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-status-tag">
+            <span class="pulse-dot"></span>
+            <span>Currently Pursuing MCA @ RVS CAS</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Hi, I'm <span class="gradient-text-cyan">ARUNKARTHIKEYAN M</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span>Creative Technologist</span>
+            <span class="dot-sep">•</span>
+            <span>Web Developer</span>
+            <span class="dot-sep">•</span>
+            <span>Programmer</span>
+            <span class="dot-sep">•</span>
+            <span>Filmmaker</span>
+          </div>
+
+          <p class="hero-description">
+            Building digital experiences where technology meets creativity.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              View My Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact Me
+            </a>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <div class="social-icon-links">
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/arunkarthikeyan-m-171335361" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="ARUNKARTHIKEYAN M LinkedIn Profile">
+                <svg viewBox="0 0 24 24">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.88 0-1.6.72-1.6 1.6s.72 1.6 1.6 1.6 1.6-.72 1.6-1.6-.72-1.6-1.6-1.6Z"/>
+                </svg>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/ARUNKARTHIKEYAN05" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="ARUNKARTHIKEYAN M GitHub Profile">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                </svg>
+              </a>
+
+              <!-- YouTube -->
+              <a href="https://youtube.com/@bujikutty4041" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-youtube" aria-label="ARUNKARTHIKEYAN M YouTube Channel">
+                <svg viewBox="0 0 24 24">
+                  <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/buji_120" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-instagram" aria-label="ARUNKARTHIKEYAN M Instagram Profile">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Terminal / Interactive Card -->
+        <div class="hero-visual reveal delay-1">
+          <div class="hero-interactive-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div class="terminal-title">arun@portfolio:~$ profile.json</div>
+              <div style="width: 32px;"></div>
+            </div>
+
+            <div class="terminal-body">
+              <div class="code-line"><span class="code-comment">// Core Professional Identity</span></div>
+              <div class="code-line"><span class="code-key">"name"</span>: <span class="code-str">"ARUNKARTHIKEYAN M"</span>,</div>
+              <div class="code-line"><span class="code-key">"education"</span>: <span class="code-str">"MCA @ RVS CAS"</span>,</div>
+              <div class="code-line"><span class="code-key">"roles"</span>: [</div>
+              <div class="code-line" style="padding-left: 1rem;"><span class="code-val">"Web Developer"</span>, <span class="code-val">"Programmer"</span>,</div>
+              <div class="code-line" style="padding-left: 1rem;"><span class="code-val">"Creative Technologist"</span>, <span class="code-val">"Filmmaker"</span></div>
+              <div class="code-line">],</div>
+              <div class="code-line"><span class="code-key">"focus"</span>: <span class="code-str">"AI • Automation • Modern Web"</span>,</div>
+              <div class="code-line"><span class="code-key">"status"</span>: <span class="code-val" style="color: #34d399;">"Available for Innovation"</span></div>
+            </div>
+
+            <div class="hero-dual-pills">
+              <div class="dual-pill pill-tech">
+                <div class="pill-title">Tech Dimension</div>
+                <div class="pill-val">Web &amp; Code</div>
+              </div>
+              <div class="dual-pill pill-creative">
+                <div class="pill-title">Creative Dimension</div>
+                <div class="pill-val">Cinema &amp; Stories</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT SECTION
+         ========================================================================== */
+    -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">Behind The Code</div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Blending analytical computer science with cinematic digital storytelling.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I am a <span class="about-highlight">Computer Science professional</span> interested in web development, programming, creative technology, AI, filmmaking and digital content creation.
+            </p>
+            <p>
+              I enjoy combining technology and creativity to build useful and visually engaging digital experiences. I am currently pursuing my <span class="about-highlight">Master of Computer Applications (MCA) at RVS College of Arts and Science (RVS CAS)</span>.
+            </p>
+            <p>
+              Beyond traditional software engineering, I am deeply interested in <span class="about-highlight">AI-powered assistants, automation, Blender, Unreal Engine, and future technologies</span>. My mindset bridges programmatic logic and artistic visual composition.
+            </p>
+
+            <div class="about-interests-grid">
+              <div class="interest-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                <span>Web Development</span>
+              </div>
+              <div class="interest-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                <span>Programming &amp; Logic</span>
+              </div>
+              <div class="interest-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <span>UI/UX Design</span>
+              </div>
+              <div class="interest-tag creative-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                <span>Filmmaking &amp; Video Editing</span>
+              </div>
+              <div class="interest-tag creative-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                <span>Photography &amp; Videography</span>
+              </div>
+              <div class="interest-tag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 12L2.5 7.5"></path></svg>
+                <span>AI &amp; Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dual Tech + Creative Visual Concept -->
+          <div class="concept-showcase reveal delay-1">
+            <div class="concept-header">
+              <span class="concept-badge">The Core Philosophy</span>
+              <h3 class="concept-title">Tech + Creative Synergy</h3>
+            </div>
+
+            <div class="synergy-container">
+              <div class="synergy-column synergy-tech">
+                <div class="synergy-head">
+                  <div class="synergy-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  </div>
+                  <h4>The Analytical Mind</h4>
+                </div>
+                <p>Computer Science foundation, clean programming structures, responsive web platforms, database handling, and systematic algorithmic thinking.</p>
+              </div>
+
+              <div class="synergy-bridge">
+                <span class="bridge-core">Creative Technologist</span>
+              </div>
+
+              <div class="synergy-column synergy-creative">
+                <div class="synergy-head">
+                  <div class="synergy-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                  </div>
+                  <h4>The Storytelling Heart</h4>
+                </div>
+                <p>Cinematography, screenwriting, pacing, video editing, visual design, and emotional connection that transforms code into memorable experiences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION SECTION
+         ========================================================================== -->
+    <section class="section" id="education" style="background: rgba(10, 14, 22, 0.4);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">Academic Journey</div>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Formal foundation in Computer Science and software engineering.</p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- Current: MCA -->
+          <div class="edu-item current reveal">
+            <div class="edu-marker"></div>
+            <div class="glass-card edu-card">
+              <div class="edu-header">
+                <div class="edu-degree">
+                  MCA (Master of Computer Applications)
+                  <span class="status-pill">Currently Pursuing</span>
+                </div>
+                <div class="edu-year">Present</div>
+              </div>
+              <div class="edu-institution">RVS College of Arts and Science (RVS CAS)</div>
+              <p class="edu-details">
+                Advancing expertise in advanced computing, software engineering, modern development paradigms, and intelligent digital systems.
+              </p>
+            </div>
+          </div>
+
+          <!-- B.Sc Computer Science -->
+          <div class="edu-item reveal delay-1">
+            <div class="edu-marker"></div>
+            <div class="glass-card edu-card">
+              <div class="edu-header">
+                <div class="edu-degree">
+                  B.Sc Computer Science
+                </div>
+                <div class="edu-year">2023 – 2026</div>
+              </div>
+              <div class="edu-institution">Government Arts and Science College, Sendamangalam</div>
+              <p class="edu-details">
+                Completed core undergraduate curriculum in computer science, software programming, data structures, algorithms, and web technologies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Higher Secondary -->
+          <div class="edu-item reveal delay-2">
+            <div class="edu-marker"></div>
+            <div class="glass-card edu-card">
+              <div class="edu-header">
+                <div class="edu-degree">
+                  Higher Secondary Certificate (HSC)
+                  <span class="score-pill">65%</span>
+                </div>
+                <div class="edu-year">School Education</div>
+              </div>
+              <div class="edu-institution">Government Higher Secondary School, Thirumanur</div>
+              <p class="edu-details">
+                Higher secondary academic coursework with focus on science and foundational mathematics.
+              </p>
+            </div>
+          </div>
+
+          <!-- SSLC -->
+          <div class="edu-item reveal delay-3">
+            <div class="edu-marker"></div>
+            <div class="glass-card edu-card">
+              <div class="edu-header">
+                <div class="edu-degree">
+                  Secondary School Leaving Certificate (SSLC)
+                  <span class="score-pill">90%</span>
+                </div>
+                <div class="edu-year">School Education</div>
+              </div>
+              <div class="edu-institution">Government High School, Veppilaipatti</div>
+              <p class="edu-details">
+                Secondary school education with high academic achievement across core subjects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS SECTION
+         ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">Capabilities</div>
+          <h2 class="section-title">Technical &amp; Creative Skills</h2>
+          <p class="section-subtitle">Solid technical proficiencies paired with versatile creative abilities.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming -->
+          <div class="glass-card skill-card reveal">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="category-title">Programming</div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                JavaScript
+              </span>
+              <span class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                Python
+              </span>
+              <span class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                Java
+              </span>
+              <span class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                C
+              </span>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="glass-card skill-card reveal delay-1">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div class="category-title">Web Development</div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon></svg>
+                HTML
+              </span>
+              <span class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon></svg>
+                CSS
+              </span>
+              <span class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon></svg>
+                JavaScript
+              </span>
+              <span class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon></svg>
+                Bootstrap
+              </span>
+              <span class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon></svg>
+                Angular
+              </span>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="glass-card skill-card category-database reveal delay-2">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div class="category-title">Database</div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse></svg>
+                MongoDB
+              </span>
+            </div>
+          </div>
+
+          <!-- Other & Creative -->
+          <div class="glass-card skill-card category-creative reveal delay-3">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+              </div>
+              <div class="category-title">Creative &amp; Design</div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-chip">UI/UX Design</span>
+              <span class="skill-chip">Problem Solving</span>
+              <span class="skill-chip">Website Designing</span>
+              <span class="skill-chip">Video Editing</span>
+              <span class="skill-chip">Photography</span>
+              <span class="skill-chip">Videography</span>
+              <span class="skill-chip">Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS SECTION
+         ========================================================================== -->
+    <section class="section" id="projects" style="background: rgba(12, 16, 26, 0.45);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">Portfolio Showcase</div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world web projects, interactive simulations, and hackathon solutions.</p>
+        </div>
+
+        <div class="projects-header-actions reveal">
+          <a href="https://github.com/ARUNKARTHIKEYAN05" target="_blank" rel="noopener noreferrer" class="github-profile-banner">
+            <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+            <span>Explore All Repositories on GitHub: <strong>@ARUNKARTHIKEYAN05</strong></span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 2: SIH Project (Distinct Featured Badge) -->
+          <div class="glass-card project-card featured-sih reveal">
+            <div class="project-thumb">
+              <span class="project-badge-top badge-sih">★ SIH Hackathon Project</span>
+              <div class="project-thumb-art">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">SIH Project</h3>
+              <p class="project-desc">
+                Project developed as part of Smart India Hackathon (SIH). Focused on engineering modern technological solutions to national-level real-world challenges.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Smart India Hackathon</span>
+                <span class="tech-tag">Web Deployment</span>
+                <span class="tech-tag">Vercel</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://sih-gold-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-amber btn-sm" style="width: 100%;">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 1: ANTY / Personal Web Project -->
+          <div class="glass-card project-card reveal delay-1">
+            <div class="project-thumb">
+              <span class="project-badge-top badge-web">Live Project</span>
+              <div class="project-thumb-art">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">ANTY / Personal Web Project</h3>
+              <p class="project-desc">
+                Personal web application and frontend exploration showcasing customized interface concepts and responsive design structures.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">GitHub Pages</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://arunkarthikeyan05.github.io/anty/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="width: 100%;">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: My Project 2 -->
+          <div class="glass-card project-card reveal delay-2">
+            <div class="project-thumb">
+              <span class="project-badge-top badge-web">Cloud App</span>
+              <div class="project-thumb-art">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">My Project 2</h3>
+              <p class="project-desc">
+                Cloud-deployed web application built to explore modern frontend UI architectures and responsive deployment workflows.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Web Application</span>
+                <span class="tech-tag">Vercel Deployment</span>
+                <span class="tech-tag">Frontend</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://my-project-2-seven.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="width: 100%;">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Pac-Man Practical -->
+          <div class="glass-card project-card reveal">
+            <div class="project-thumb">
+              <span class="project-badge-top badge-web">Game Dev</span>
+              <div class="project-thumb-art">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#eab308" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="12 12 21 8 21 16 12 12" fill="#0d131f"></polygon>
+                  <circle cx="12" cy="7" r="1" fill="#eab308"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Pac-Man Practical</h3>
+              <p class="project-desc">
+                Interactive web implementation of classic Pac-Man mechanics, focusing on sprite animation, coordinate tracking, and user keyboard event handling.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript Logic</span>
+                <span class="tech-tag">DOM Animation</span>
+                <span class="tech-tag">Game Loop</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://arunkarthikeyan05.github.io/pac_man_practical/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="width: 100%;">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Random Ball Movement -->
+          <div class="glass-card project-card reveal delay-1">
+            <div class="project-thumb">
+              <span class="project-badge-top badge-web">Simulation</span>
+              <div class="project-thumb-art">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="8" cy="8" r="4"></circle>
+                  <circle cx="16" cy="16" r="5"></circle>
+                  <path d="M12 4v4m0 8v4m-8-8h4m8 0h4"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Random Ball Movement</h3>
+              <p class="project-desc">
+                Physics-inspired visual simulation calculating randomized vectors, screen boundary collisions, and dynamic canvas rendering in real time.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Physics Math</span>
+                <span class="tech-tag">Web Graphics</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://arunkarthikeyan05.github.io/random_ball_movement/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="width: 100%;">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Simulation of Ball Movement -->
+          <div class="glass-card project-card reveal delay-2">
+            <div class="project-thumb">
+              <span class="project-badge-top badge-web">Motion Study</span>
+              <div class="project-thumb-art">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 12a8 8 0 0 1 16 0"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <polyline points="12 2 12 6 12 18 12 22"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Simulation of Ball Movement</h3>
+              <p class="project-desc">
+                Motion simulation exploring velocity dampening, interactive bounds collision, and mathematical object trajectories within the browser viewport.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Algorithm</span>
+                <span class="tech-tag">Velocity Calculations</span>
+                <span class="tech-tag">CSS/JS</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://arunkarthikeyan05.github.io/Stimulation_of_Ball_Movement/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="width: 100%;">
+                  <span>Live Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Project: Computer Science Department Website -->
+          <div class="glass-card project-card reveal" style="grid-column: 1 / -1;">
+            <div class="project-content" style="padding: 2.2rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem;">
+                <h3 class="project-title" style="margin-bottom: 0;">Computer Science Department Website</h3>
+                <span class="project-badge-top badge-academic" style="position: static;">Academic Project</span>
+              </div>
+              <p class="project-desc" style="font-size: 0.98rem; max-width: 900px; margin-bottom: 1.5rem;">
+                Designed and developed a website for a Computer Science department with separate student and staff login systems. Staff can add and update student information while students can view their own information.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Database concepts</span>
+                <span class="tech-tag">Authentication &amp; Role-based Access</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE SECTION
+         ========================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">Career &amp; Industry</div>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">Practical creative direction, web development, and digital production roles.</p>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Creative Head @ APK Production -->
+          <div class="glass-card exp-card exp-creative reveal">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Creative Head</h3>
+                <div class="exp-company">
+                  <span>APK Production</span>
+                </div>
+              </div>
+              <div class="exp-period">Jul 2023 – Dec 2025</div>
+            </div>
+            <ul class="exp-duties">
+              <li>Led end-to-end website creation and digital landing page initiatives.</li>
+              <li>Directed visual video creation and post-production video editing workflows.</li>
+              <li>Engineered creative portfolio designs and visual branding assets.</li>
+              <li>Pioneered AI-assisted creative work to augment digital production efficiency.</li>
+            </ul>
+          </div>
+
+          <!-- Designer @ APK Production -->
+          <div class="glass-card exp-card reveal delay-1">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Designer</h3>
+                <div class="exp-company">
+                  <span>APK Production</span>
+                </div>
+              </div>
+              <div class="exp-period">Oct 2020 – Dec 2025</div>
+            </div>
+            <ul class="exp-duties">
+              <li>Designed visual graphics, promotional creative assets, and aesthetic media layouts.</li>
+              <li>Collaborated on visual design standards, brand cohesion, and multimedia artwork.</li>
+            </ul>
+          </div>
+
+          <!-- Content Creator -->
+          <div class="glass-card exp-card exp-creative reveal delay-2">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Content Creator</h3>
+                <div class="exp-company">
+                  <span>Digital Media &amp; Storytelling</span>
+                </div>
+              </div>
+              <div class="exp-period">Dec 2020 – Present</div>
+            </div>
+            <ul class="exp-duties">
+              <li>Architecting digital content and multi-channel social media engagement strategies.</li>
+              <li>Developing responsive websites and landing pages for digital initiatives.</li>
+              <li>Crafting creative storytelling, narrative script writing, and innovative video concepts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CERTIFICATIONS SECTION
+         ========================================================================== -->
+    <section class="section" id="certifications" style="background: rgba(10, 14, 22, 0.4);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">Credentials</div>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Verified technical proficiencies and creative credentials.</p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Python Basics -->
+          <div class="glass-card cert-card reveal">
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="cert-info">
+              <h4>Python Basics</h4>
+              <div class="cert-issuer">Issued by <span>Infosys</span></div>
+            </div>
+          </div>
+
+          <!-- Java Basics -->
+          <div class="glass-card cert-card reveal delay-1">
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="cert-info">
+              <h4>Java Basics</h4>
+              <div class="cert-issuer">Issued by <span>Infosys</span></div>
+            </div>
+          </div>
+
+          <!-- UI/UX Web Designing -->
+          <div class="glass-card cert-card reveal delay-2">
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <div class="cert-info">
+              <h4>UI/UX Web Designing</h4>
+              <div class="cert-issuer">Issued by <span>Infosys</span></div>
+            </div>
+          </div>
+
+          <!-- HTML & Bootstrap -->
+          <div class="glass-card cert-card reveal">
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <div class="cert-info">
+              <h4>HTML &amp; Bootstrap</h4>
+              <div class="cert-issuer">Issued by <span>Infosys</span></div>
+            </div>
+          </div>
+
+          <!-- Angular -->
+          <div class="glass-card cert-card reveal delay-1">
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon></svg>
+            </div>
+            <div class="cert-info">
+              <h4>Angular</h4>
+              <div class="cert-issuer">Issued by <span>Infosys</span></div>
+            </div>
+          </div>
+
+          <!-- Bootstrap -->
+          <div class="glass-card cert-card reveal delay-2">
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+            </div>
+            <div class="cert-info">
+              <h4>Bootstrap</h4>
+              <div class="cert-issuer">Issued by <span>Infosys</span></div>
+            </div>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="glass-card cert-card reveal">
+            <div class="cert-badge-icon" style="color: #34d399; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.25);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <div class="cert-info">
+              <h4>MongoDB</h4>
+              <div class="cert-issuer">Database Certification</div>
+            </div>
+          </div>
+
+          <!-- AI & Green Skills -->
+          <div class="glass-card cert-card reveal delay-1">
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path></svg>
+            </div>
+            <div class="cert-info">
+              <h4>AI &amp; Green Skills</h4>
+              <div class="cert-issuer">Issued by <span>Infosys</span></div>
+            </div>
+          </div>
+
+          <!-- Short Film Certificate -->
+          <div class="glass-card cert-card cert-creative reveal delay-2">
+            <div class="cert-badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line></svg>
+            </div>
+            <div class="cert-info">
+              <h4>Short Film Certificate</h4>
+              <div class="cert-issuer">Cinematic &amp; Creative Recognition</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CREATIVE / FILMMAKING SECTION
+         ========================================================================== -->
+    <section class="section creative-section" id="creative">
+      <div class="film-reel-strip" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge badge-amber">Cinematic Studio</div>
+          <h2 class="section-title">
+            <span class="gradient-text-cinema">Technology by Mind. Stories by Heart.</span>
+          </h2>
+          <p class="section-subtitle">
+            Exploring the emotional power of filmmaking, visual direction, and creative storytelling alongside artificial intelligence.
+          </p>
+        </div>
+
+        <div class="creative-showcase-grid">
+          <!-- Psychological Thriller Short Film Concept -->
+          <div class="glass-card film-concept-card reveal">
+            <div class="film-frame-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line></svg>
+              <span>Original Screenplay &amp; Concept</span>
+            </div>
+            <h3 class="film-title">Short Film / Psychological Thriller</h3>
+            <p class="film-desc">
+              A deeply atmospheric narrative study exploring suspense, perception, and human tension. Conceived with structured screenplay formatting, visual storyboards, nuanced character arcs, and cinematic lighting principles.
+            </p>
+            <div class="film-disciplines">
+              <span class="film-pill">Direction</span>
+              <span class="film-pill">Screenwriting</span>
+              <span class="film-pill">Cinematography</span>
+              <span class="film-pill">Editing &amp; Color Pacing</span>
+            </div>
+          </div>
+
+          <!-- Jarvis-style AI Assistant Concept Project -->
+          <div class="glass-card ai-concept-card reveal delay-1">
+            <div class="ai-hud-header">
+              <div class="ai-hud-tag">
+                <span class="ai-radar-pulse"></span>
+                <span>Futuristic Tech Concept</span>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-purple);">STATUS: RESEARCH</span>
+            </div>
+            <h3 class="film-title" style="color: #f1f5f9;">Jarvis-style AI Assistant – Concept Project</h3>
+            <p class="film-desc">
+              Exploring ideas for a voice-based AI assistant involving automation, AI basics and future robotic integration concepts. Blending sci-fi inspiration with actionable programming workflows to reimagine human-computer interaction.
+            </p>
+            <div class="film-disciplines">
+              <span class="film-pill" style="border-color: rgba(168, 85, 247, 0.3); color: #e9d5ff;">Voice Assistant</span>
+              <span class="film-pill" style="border-color: rgba(168, 85, 247, 0.3); color: #e9d5ff;">Automation</span>
+              <span class="film-pill" style="border-color: rgba(168, 85, 247, 0.3); color: #e9d5ff;">AI Basics</span>
+              <span class="film-pill" style="border-color: rgba(168, 85, 247, 0.3); color: #e9d5ff;">Robotics Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Creative Pillars -->
+        <div class="creative-pillars reveal delay-2">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+            </div>
+            <h4>Filmmaking &amp; Direction</h4>
+            <p>Visual scene planning, staging, camera movement, and thematic direction.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+            </div>
+            <h4>Screenwriting</h4>
+            <p>Character dialogue, pacing, high-stakes conflict, and narrative structure.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+            </div>
+            <h4>Video Editing</h4>
+            <p>Rhythm cutting, montage sequencing, audio synchronization, and post-production polish.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            </div>
+            <h4>Photography &amp; Visuals</h4>
+            <p>Composition, color harmony, natural light shaping, and expressive frames.</p>
+          </div>
+        </div>
+      </div>
+      <div class="film-reel-strip film-reel-strip-bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">Get In Touch</div>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Let's connect for web development, creative collaborations, or technical projects.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Contact Information -->
+          <div class="contact-info-panel reveal">
+            <h3 class="contact-pitch">Let's build something meaningful together.</h3>
+            <p class="contact-statement">
+              Whether you are looking for a dedicated web developer, a creative technical collaborator, or discussing innovative ideas in software and cinema, I am always open to conversation.
+            </p>
+
+            <div class="direct-contact-items">
+              <!-- Name -->
+              <div class="direct-card">
+                <div class="direct-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </div>
+                <div class="direct-meta">
+                  <div class="label">Developer &amp; Creator</div>
+                  <div class="value">ARUNKARTHIKEYAN M</div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <a href="mailto:keyanarunkarthi@gmail.com" class="direct-card" aria-label="Send email to keyanarunkarthi@gmail.com">
+                <div class="direct-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="direct-meta">
+                  <div class="label">Email Address</div>
+                  <div class="value">keyanarunkarthi@gmail.com</div>
+                </div>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:9342746339" class="direct-card" aria-label="Call 9342746339">
+                <div class="direct-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="direct-meta">
+                  <div class="label">Phone / Contact</div>
+                  <div class="value">+91 9342746339</div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Social Links in Contact -->
+            <div>
+              <div class="social-label" style="margin-bottom: 0.75rem;">Direct Social Channels:</div>
+              <div class="social-icon-links">
+                <a href="https://www.linkedin.com/in/arunkarthikeyan-m-171335361" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.88 0-1.6.72-1.6 1.6s.72 1.6 1.6 1.6 1.6-.72 1.6-1.6-.72-1.6-1.6-1.6Z"/></svg>
+                </a>
+                <a href="https://github.com/ARUNKARTHIKEYAN05" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                </a>
+                <a href="https://youtube.com/@bujikutty4041" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-youtube" aria-label="YouTube">
+                  <svg viewBox="0 0 24 24"><path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/buji_120" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-instagram" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="glass-card contact-form-panel reveal delay-1">
+            <h3 class="form-title">Send a Direct Message</h3>
+            
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="user-name" class="form-label">Your Name</label>
+                <input type="text" id="user-name" name="name" class="form-control" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="user-email" class="form-label">Your Email</label>
+                <input type="email" id="user-email" name="email" class="form-control" placeholder="e.g. john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="user-message" class="form-label">Your Message</label>
+                <textarea id="user-message" name="message" class="form-control" placeholder="Briefly describe your project, inquiry, or idea..." required></textarea>
+                <div class="form-hint">Client-side verified. You can also directly reach me at keyanarunkarthi@gmail.com</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <div id="form-status" class="form-status" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-tagline-quote">
+            "Building with Code. Creating with Imagination."
+          </div>
+          <div class="footer-brand-tagline">
+            ARUNKARTHIKEYAN M — Creative Technologist &amp; Web Developer
+          </div>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/arunkarthikeyan-m-171335361" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.88 0-1.6.72-1.6 1.6s.72 1.6 1.6 1.6 1.6-.72 1.6-1.6-.72-1.6-1.6-1.6Z"/></svg>
+          </a>
+          <a href="https://github.com/ARUNKARTHIKEYAN05" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+          </a>
+          <a href="https://youtube.com/@bujikutty4041" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-youtube" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/buji_120" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 ARUNKARTHIKEYAN M. All rights reserved.
+        </div>
+        <button class="back-to-top-btn" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/canvas-bg.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
